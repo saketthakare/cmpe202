@@ -1,7 +1,6 @@
 
-public class GumballMachine
+public class GumballMachine implements CrankMachine
 {
-
     private int num_gumballs;
     private boolean has_quarter;
 
@@ -12,7 +11,7 @@ public class GumballMachine
         this.has_quarter = false;
     }
 
-    public void insertQuarter(int coin)
+    public void insertCoin(int coin)
     {
         if ( coin == 25 )
             this.has_quarter = true ;
