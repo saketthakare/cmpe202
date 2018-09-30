@@ -2,10 +2,17 @@
 
 ## Diagrams Inlcluded
 
+1. [CRCCustomer.png](CRCCustomer.png)
+2. [CRC-Resturant.png](CRC-Resturant.png)
+3. [CRC-TableFullState.png](CRC-TableFullState.png)
+4. [CRC-TableVacantState.png](CRC-TableVacantState.png)
+5. [ClassDiagram.jpg](ClassDiagram.jpg)
+
+
 ## Class List
 
 1. **Resturant** This class handles a customer list and manages table states
-2. **TableFullState** State indicates that all the tables are full
+2. **TableFullState** State indicates that all the tables are full (Note : no fucntionaity in TableFullState; Made for future addition)
 3. **TableVacantState** State indicates that there's a table vacant and can accept customer
 4. **Customer** This class recieves notification from Resturant and provides decision to accept/reject offer
 
