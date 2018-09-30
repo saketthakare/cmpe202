@@ -3,9 +3,9 @@
 ## Diagrams Inlcluded
 
 1. [CRCCustomer.png](CRCCustomer.png)
-2. [CRC-Resturant.png](CRC-Resturant.png)
-3. [CRC-TableFullState.png](CRC-TableFullState.png)
-4. [CRC-TableVacantState.png](CRC-TableVacantState.png)
+2. [CRCResturant.png](CRCResturant.png)
+3. [CRCTableFullState.png](CRCTableFullState.png)
+4. [CRCTableVacantState.png](CRCTableVacantState.png)
 5. [ClassDiagram.jpg](ClassDiagram.jpg)
 
 
@@ -26,3 +26,7 @@ Observer pattern seems more accurate since the customers are observing changes i
 **State Pattern**
 
 In customer tracking system every event can be realted to a certain change in the state. Also using state provides easier addition of other functionality/support for future addition such as the 'table done with food ready to receive the bill'. 
+
+
+https://github.com/saketthakare/cmpe202/blob/master/lab4/CRC-Customer.png
+https://github.com/saketthakare/cmpe202/blob/master/lab4/CRCCustomer.png
