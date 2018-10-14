@@ -6,7 +6,7 @@ public class PrintContext {
         this.strategy = strategy;
     }
 
-    public void PrintBill (){
-        this.strategy.printBill();
+    public void PrintBill (MenuItem root_item){
+        this.strategy.printBill(root_item);
     }
 }

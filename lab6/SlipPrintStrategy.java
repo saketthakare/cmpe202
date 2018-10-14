@@ -1,5 +1,5 @@
 public interface SlipPrintStrategy {
 
-    void printBill();
+    void printBill(MenuItem root_item);
 
 }

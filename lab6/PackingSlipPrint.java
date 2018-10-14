@@ -1,23 +1,35 @@
 public class PackingSlipPrint implements SlipPrintStrategy {
 
     @Override
-    public void printBill() {
-        System.out.println("            Five Guys");
-        System.out.println("        Burgers and Fries");
-        System.out.println("         Store # CA-1294");
-        System.out.println("      5353 ALMADEN EXPY N60");
-        System.out.println("        San Jose, CA 95118");
-        System.out.println("         (P) 408-264-9300");
-        System.out.println("\n      12/1/2016 1:46:54 PM");
-        System.out.println("\n          FIVE GUYS");
-        System.out.println("Order Number : 45");
-        System.out.println("1     LBB                           5.59");
-        System.out.println("        {{{{ BACON }}}}");
-        System.out.println("        LETTUCE");
-        System.out.println("        TOMATO");
-        System.out.println("        ->|G ONION");
-        System.out.println("        ->|JALA Grilled");
-        System.out.println("1     LTL CAJ                       2.79");
-        System.out.println("\n      Total:                       $8.38");
+    public void printBill(MenuItem root_item) {
+        System.out.println("Patties - 1");
+        System.out.println("\nOrder Number : 45");
+        System.out.println("      12/1/2016 1:46:54 PM");
+        System.out.println("          FIVE GUYS");
+        System.out.println("\nSandwich# 1");
+        for (MenuItem item : root_item.getAllItems()) {
+            if (item.type == "MAIN_ITEM") {
+                System.out.println("1     " + item.name);
+                for (MenuItem subItem : item.getAllItems()) {
+                    if (subItem.type == "TOP_BUN") {
+                        System.out.println("        " + subItem.name);
+                    }
+                }
+                for (MenuItem subItem : item.getAllItems()) {
+                    if (subItem.type == "BOTTOM_BUN") {
+                        System.out.println("        ->|" + subItem.name);
+                    }
+                }
+                for (MenuItem subItem : item.getAllItems()) {
+                    if (subItem.type == "MEAT") {
+                        System.out.println("        {{{{ " + subItem.name + " }}}}");
+                    }
+                }
+            }
+        }
+        System.out.println("\nRegister:1      Tran Seq No: 57845");
+        System.out.println("Cashier: Sakda* S.");
+
+
     }
 }
