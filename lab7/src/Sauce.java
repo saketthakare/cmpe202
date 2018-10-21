@@ -8,12 +8,12 @@ public class Sauce extends LeafDecorator
         super(d) ;
     }
     
-    // 1 sauce free, extra +.75
+    // 1 sauce free, extra +.50
     public void setOptions( String[] options )
     {
         this.options = options ;
         if ( options.length > 1 )
-            this.price += (options.length-1) * 0.75 ;
+            this.price += (options.length-1) * 0.50 ;
     }
     
     public String getDescription() 

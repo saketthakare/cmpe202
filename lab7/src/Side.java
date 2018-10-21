@@ -1,21 +1,15 @@
-public class Toppings extends LeafDecorator
-{
+public class Side extends LeafDecorator {
+
     private String[] options ;
 
+    public Side(String d) { super(d); }
 
-    public Toppings( String d )
-    {
-        super(d) ;
-    }
-
-    // Toppings free
-    public void setOptions( String[] options )
-    {
+    public void setOptions(String[] options) {
         this.options = options ;
+        this.price = options.length * 3.00 ;
     }
 
-    public String getDescription()
-    {
+    public String getDescription() {
         String desc = "   " ;
         for ( int i = 0; i<options.length; i++ )
         {
@@ -24,5 +18,4 @@ public class Toppings extends LeafDecorator
         }
         return desc ;
     }
-
 }
