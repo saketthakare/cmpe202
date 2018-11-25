@@ -18,6 +18,6 @@ Using this function eliminates the need to create `Decorator`, `ConcreteDecorato
 
 ## Submissions
 
-- [Original Decorator Pattern Implementation](https://github.com/paulnguyen/cmpe202/tree/master/patterns)
+- [Original Decorator Pattern Implementation](https://github.com/paulnguyen/cmpe202/tree/master/patterns/decorator)
 
 - [Decorator Pattern Implementation using Lamda](lamda-decorator)
